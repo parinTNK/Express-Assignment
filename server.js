@@ -4,7 +4,7 @@ const app = express();
 
 
 app.get('/profiles', (req, res) => {
-    res.send({
+    res.status(200).send({
         "data": {
             "name": "john",
             "age": 20
